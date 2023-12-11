@@ -2,6 +2,8 @@
 // Final Project for Survey of Languages
 /*
 	Sudoku Solver
+	Recursively solves a sudoku board
+	In the case of an unsolvable sudoku board, it will report an unsolvable board.
 */
 
 #include <iostream>
