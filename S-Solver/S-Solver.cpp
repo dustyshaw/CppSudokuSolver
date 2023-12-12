@@ -204,8 +204,8 @@ int main()
 	while (true)
 	{
 
-	std::cout << "Sudoku Solver\nSelect A Board:\n";
-	int allBoards[4][9][9] = {
+	std::cout << "\n\n** Sudoku Solver **\nSelect A Board:\n";
+	int allBoards[5][9][9] = {
 		{
 		{ 5, 3, 0, 6, 0, 0, 0, 9, 8 },	// 0 EZ board
 		{ 0, 7, 0, 1, 9, 5, 0, 0, 0 },
@@ -248,7 +248,17 @@ int main()
 				{ 0, 0, 0, 0, 0, 0, 0, 0, 6 },
 				{ 0, 0, 0, 0, 3, 0, 9, 7, 2 },
 				{ 0, 0, 0, 5, 0, 0, 4, 0, 0 },
-				{ 0, 7, 0, 0, 8, 0, 0, 5, 0 } }
+				{ 0, 7, 0, 0, 8, 0, 0, 5, 0 } },
+				{
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },	// 4 All Zeros
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+				{ 0, 0, 0, 0, 0, 0, 0, 0, 0 } }
 
 	};
 
@@ -260,6 +270,8 @@ int main()
 	Print2dBoard(allBoards[2]);
 	std::cout << "\n\nBoard [3] - Two Solutions \n";
 	Print2dBoard(allBoards[3]);
+	std::cout << "\n\nBoard [4] - All Zeros \n";
+	Print2dBoard(allBoards[4]);
 	int choice;
 	std::cin >> choice;
 
